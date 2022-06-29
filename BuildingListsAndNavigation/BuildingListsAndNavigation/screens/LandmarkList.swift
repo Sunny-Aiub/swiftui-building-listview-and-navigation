@@ -3,9 +3,19 @@
 import SwiftUI
 
 struct LandmarkList: View {
+    
+    @State private var showFafouritesOnly = true
+    
+    var filteredLandmarks : [Landmark]{
+        landmarks.filter { landmark in
+            
+            (!showFafouritesOnly || landmark.isFavorite)
+        }
+    }
+    
     var body: some View {
         NavigationView {
-            List(landmarks) { landmark in
+            List(filteredLandmarks) { landmark in
                 NavigationLink {
                     LandmarkDetail(landmark: landmark)
                 } label: {
@@ -13,6 +23,14 @@ struct LandmarkList: View {
                 }
                 
             }
+//            List(landmarks) { landmark in
+//                NavigationLink {
+//                    LandmarkDetail(landmark: landmark)
+//                } label: {
+//                    LandmarkRow(landmark: landmark)
+//                }
+//
+//            }
             .navigationTitle("Landmarks")
         }
     }
