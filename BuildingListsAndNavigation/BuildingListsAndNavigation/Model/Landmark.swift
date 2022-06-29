@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import CoreLocation
 
-struct Landmark: Hashable, Codable {
+struct Landmark: Hashable, Codable, Identifiable {
 
     var id: Int
 
@@ -48,3 +48,5 @@ struct Coordinates: Hashable, Codable {
     var longitude: Double
 
 }
+
+var landmarks: [Landmark] = load("landmarkData.json")

@@ -11,6 +11,7 @@ struct LandmarkList: View {
                 } label: {
                     LandmarkRow(landmark: landmark)
                 }
+                
             }
             .navigationTitle("Landmarks")
         }
