@@ -4,33 +4,49 @@ import SwiftUI
 
 struct LandmarkList: View {
     
-    @State private var showFafouritesOnly = true
+    @State private var showFavouritesOnly = false
     
     var filteredLandmarks : [Landmark]{
         landmarks.filter { landmark in
             
-            (!showFafouritesOnly || landmark.isFavorite)
+            (!showFavouritesOnly || landmark.isFavorite)
         }
     }
     
     var body: some View {
         NavigationView {
-            List(filteredLandmarks) { landmark in
-                NavigationLink {
-                    LandmarkDetail(landmark: landmark)
-                } label: {
-                    LandmarkRow(landmark: landmark)
+            List {
+                
+                Toggle(isOn: $showFavouritesOnly) {
+                    
+                    Text("Favorites only")
+                    
+                }
+                
+                
+                ForEach(filteredLandmarks) { landmark in
+                    
+                    NavigationLink {
+                        
+                        LandmarkDetail(landmark: landmark)
+                        
+                    } label: {
+                        
+                        LandmarkRow(landmark: landmark)
+                        
+                    }
+                    
                 }
                 
             }
-//            List(landmarks) { landmark in
-//                NavigationLink {
-//                    LandmarkDetail(landmark: landmark)
-//                } label: {
-//                    LandmarkRow(landmark: landmark)
-//                }
-//
-//            }
+            //            List(landmarks) { landmark in
+            //                NavigationLink {
+            //                    LandmarkDetail(landmark: landmark)
+            //                } label: {
+            //                    LandmarkRow(landmark: landmark)
+            //                }
+            //
+            //            }
             .navigationTitle("Landmarks")
         }
     }
