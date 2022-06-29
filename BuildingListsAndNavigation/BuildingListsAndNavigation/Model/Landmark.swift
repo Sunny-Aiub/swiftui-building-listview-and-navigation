@@ -46,4 +46,3 @@ struct Coordinates: Hashable, Codable {
 
 }
 
-var landmarks: [Landmark] = load("landmarkData.json")
