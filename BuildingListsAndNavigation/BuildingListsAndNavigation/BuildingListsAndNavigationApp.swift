@@ -11,6 +11,7 @@ import SwiftUI
 struct BuildingListsAndNavigationApp: App {
     var body: some Scene {
         WindowGroup {
+//            Badge()
             ContentView()
                 .environmentObject(ModelData())
         }
