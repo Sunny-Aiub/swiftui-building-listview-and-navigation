@@ -37,7 +37,7 @@
 		D04C0099286C756A00693875 /* BadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeSymbol.swift; sourceTree = "<group>"; };
 		D04C009B286C773800693875 /* RotatedBadgeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatedBadgeSymbol.swift; sourceTree = "<group>"; };
 		D04C009D286C7BCE00693875 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
-		D0D39BC92869B8F80090446E /* BuildingListsAndNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuildingListsAndNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0D39BC92869B8F80090446E /* HandsOnWithSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandsOnWithSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D39BCC2869B8F80090446E /* BuildingListsAndNavigationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingListsAndNavigationApp.swift; sourceTree = "<group>"; };
 		D0D39BCE2869B8F80090446E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D0D39BD02869B8FB0090446E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 		D0D39BCA2869B8F80090446E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D0D39BC92869B8F80090446E /* BuildingListsAndNavigation.app */,
+				D0D39BC92869B8F80090446E /* HandsOnWithSwiftUI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,9 +171,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D0D39BC82869B8F80090446E /* BuildingListsAndNavigation */ = {
+		D0D39BC82869B8F80090446E /* HandsOnWithSwiftUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D0D39BD72869B8FB0090446E /* Build configuration list for PBXNativeTarget "BuildingListsAndNavigation" */;
+			buildConfigurationList = D0D39BD72869B8FB0090446E /* Build configuration list for PBXNativeTarget "HandsOnWithSwiftUI" */;
 			buildPhases = (
 				D0D39BC52869B8F80090446E /* Sources */,
 				D0D39BC62869B8F80090446E /* Frameworks */,
@@ -183,9 +183,9 @@
 			);
 			dependencies = (
 			);
-			name = BuildingListsAndNavigation;
+			name = HandsOnWithSwiftUI;
 			productName = BuildingListsAndNavigation;
-			productReference = D0D39BC92869B8F80090446E /* BuildingListsAndNavigation.app */;
+			productReference = D0D39BC92869B8F80090446E /* HandsOnWithSwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -203,7 +203,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D0D39BC42869B8F80090446E /* Build configuration list for PBXProject "BuildingListsAndNavigation" */;
+			buildConfigurationList = D0D39BC42869B8F80090446E /* Build configuration list for PBXProject "HandsOnWithSwiftUI" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -216,7 +216,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D0D39BC82869B8F80090446E /* BuildingListsAndNavigation */,
+				D0D39BC82869B8F80090446E /* HandsOnWithSwiftUI */,
 			);
 		};
 /* End PBXProject section */
@@ -396,8 +396,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.appartisanslab.BuildingListsAndNavigation;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appartisanslab.HandsOnWithSwiftUI;
+				PRODUCT_NAME = HandsOnWithSwiftUI;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -425,8 +425,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.appartisanslab.BuildingListsAndNavigation;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appartisanslab.HandsOnWithSwiftUI;
+				PRODUCT_NAME = HandsOnWithSwiftUI;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -436,7 +436,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D0D39BC42869B8F80090446E /* Build configuration list for PBXProject "BuildingListsAndNavigation" */ = {
+		D0D39BC42869B8F80090446E /* Build configuration list for PBXProject "HandsOnWithSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0D39BD52869B8FB0090446E /* Debug */,
@@ -445,7 +445,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D0D39BD72869B8FB0090446E /* Build configuration list for PBXNativeTarget "BuildingListsAndNavigation" */ = {
+		D0D39BD72869B8FB0090446E /* Build configuration list for PBXNativeTarget "HandsOnWithSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0D39BD82869B8FB0090446E /* Debug */,
